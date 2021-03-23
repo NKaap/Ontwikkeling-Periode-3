@@ -4951,12 +4951,6 @@ Transform:
   m_Father: {fileID: 1067381314}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!1 &254821152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3654322227651792216, guid: 61fedecb860f5734492d80a1970e427c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1513845151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &468363915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aa952d774679c5a4da7b6b1f410adca2,
@@ -5711,9 +5705,8 @@ GameObject:
   - component: {fileID: 1032794021}
   - component: {fileID: 1032794020}
   - component: {fileID: 1032794019}
-  - component: {fileID: 1032794023}
   m_Layer: 0
-  m_Name: worldBorder
+  m_Name: WorldBorder
   m_TagString: WorldBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5793,20 +5786,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032794023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032794018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f10f55824e6f534eb131304c9b8403a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
-  canvas: {fileID: 0}
 --- !u!4 &1067381314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61fedecb860f5734492d80a1970e427c,
@@ -6725,26 +6704,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804258201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea71f8d3cb6069e4ca8840252b1d3948, type: 3}
+  m_Script: {fileID: 11500000, guid: f4d3eebd7b6db5b41904cdc87741f93b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  muzzleFlash: {fileID: 254506495}
-  impactArrow: {fileID: 254821152}
---- !u!114 &1804258206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804258201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f10f55824e6f534eb131304c9b8403a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
   canvas: {fileID: 1296717177}
 --- !u!1001 &2044065284
 PrefabInstance:
