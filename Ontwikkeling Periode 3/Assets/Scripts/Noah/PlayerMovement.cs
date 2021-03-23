@@ -11,16 +11,27 @@ public class PlayerMovement : MonoBehaviour
     public float rotateSpeed;
     public Transform cam;
 
+    //Jump
+    public Vector3 jump;
+    public float jumpForce = 2.0f;
+
+    public bool isGrounded;
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+
+        //Jump
+        rb = GetComponent<Rigidbody>();
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Movement
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
@@ -42,5 +53,17 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(rotateVector * rotateSpeed * Time.deltaTime);
 
         cam.Rotate(rotateCam * rotateSpeed * Time.deltaTime);
+
+        //Jumping
+        if ((Input.GetButtonDown("Jump") && isGrounded))
+        {
+
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
+    }
+    void OnCollisionStay()
+    {
+        isGrounded = true;
     }
 }
