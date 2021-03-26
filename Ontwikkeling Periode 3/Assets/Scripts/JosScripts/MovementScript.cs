@@ -10,7 +10,13 @@ public class MovementScript : MonoBehaviour
     public float speed;
     public GameObject arrowPrefab;
     public GameObject cam;
-    
+    public int ammo;
+
+    void Start()
+    {
+        ammo = 20;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -22,11 +28,18 @@ public class MovementScript : MonoBehaviour
 
         GetComponent<Transform>().Translate(move * Time.deltaTime * speed);
         
+        //shooting script
+        
         if (Input.GetButtonDown("Fire1"))
         {
-            GameObject bulletObject = Instantiate(arrowPrefab);
-            bulletObject.transform.position = cam.transform.position + cam.transform.forward;
-            bulletObject.transform.forward = cam.transform.forward;
+            if (ammo > 0)
+            {
+                ammo--;
+
+                GameObject bulletObject = Instantiate(arrowPrefab);
+                bulletObject.transform.position = cam.transform.position + cam.transform.forward;
+                bulletObject.transform.forward = cam.transform.forward;
+            }
         }
        
 
