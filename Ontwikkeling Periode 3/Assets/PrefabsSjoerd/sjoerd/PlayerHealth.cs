@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public float health = 100f;
+    public GameObject canvasDeath;
+    public GameObject canvasGame;
+
 
 
     public void TakeDamage(float amount)
@@ -19,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        SceneManager.LoadScene("levelTegenwoordig");
+        canvasDeath.SetActive(true);
+        canvasGame.SetActive(false);
     }
 }
