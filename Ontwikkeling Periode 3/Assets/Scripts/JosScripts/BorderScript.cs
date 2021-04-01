@@ -42,6 +42,11 @@ public class BorderScript : MonoBehaviour
             enemy2.SetActive(true);
             enemy3.SetActive(true);
             enemy4.SetActive(true);
+            enemy5.SetActive(true);
+            enemy6.SetActive(true);
+            enemy7.SetActive(true);
+            enemy8.SetActive(true);
+            enemy9.SetActive(true);
         }
     }
 }

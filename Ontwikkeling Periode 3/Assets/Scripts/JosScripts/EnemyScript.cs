@@ -25,7 +25,6 @@ public class EnemyScript : MonoBehaviour
             if (enemyHealth <= 0)
             {
                 enemy.SetActive(false);
-                
             }
         }
     }

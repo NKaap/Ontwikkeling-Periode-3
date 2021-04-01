@@ -23,6 +23,11 @@ public class WinScreenTrigger : MonoBehaviour
     {
         SceneManager.LoadScene ("levelVerledenJos");
     }
+    
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
 
 
 }

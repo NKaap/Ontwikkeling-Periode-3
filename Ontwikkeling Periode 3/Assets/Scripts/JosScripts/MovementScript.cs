@@ -17,6 +17,7 @@ public class MovementScript : MonoBehaviour
     public int health = 100;
     public Text healText;
     public int enemydamage = 20;
+    public GameObject gameOverScreen;
 
 
     void Start()
@@ -63,6 +64,9 @@ public class MovementScript : MonoBehaviour
             if (health <= 0)
             {
                 gameObject.SetActive(false);
+                gameOverScreen.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+
             }
         }
     }
