@@ -29,20 +29,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.05, y: 1.99, z: 1}
   m_Center: {x: -0.02, y: 1, z: 0}
---- !u!64 &3121134873352752691
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6933717096465266177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5495902117074765545, guid: 6b5c3c6044b879d4682abe2f71d04a07, type: 3}
 --- !u!95 &1112011877
 Animator:
   serializedVersion: 3
@@ -62,20 +48,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5078701871695848662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6933717096465266177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d52217b51bea964bb8cf700394ddc2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookRadius: 100
---- !u!114 &6310171008788412758
+--- !u!114 &4956159453243503760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,6 +62,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 50
   Enemy: {fileID: 0}
+--- !u!114 &5078701871695848662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933717096465266177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d52217b51bea964bb8cf700394ddc2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookRadius: 100
 --- !u!114 &7019883837620303344
 MonoBehaviour:
   m_ObjectHideFlags: 0

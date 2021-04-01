@@ -10,6 +10,7 @@ public class HealthScript : MonoBehaviour
 
     public float maxHealth;
     public static float currentHealth;
+    public GameObject deathscreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,8 @@ public class HealthScript : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene("DeathScene");
+            Cursor.lockState = CursorLockMode.None;
+            deathscreen.SetActive(true);
         }
 
     }
