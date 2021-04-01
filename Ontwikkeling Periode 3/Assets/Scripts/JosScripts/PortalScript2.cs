@@ -9,7 +9,7 @@ public class PortalScript2 : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            SceneManager.LoadScene ("level tegenwoordig");
+            SceneManager.LoadScene ("levelTegenwoordig");
         }
     }
 }
