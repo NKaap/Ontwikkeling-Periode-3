@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+
     public float damage;
     public float range;
     public RaycastHit hit;
-    // Start is called before the first frame update
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetButton("Fire1"))

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
+    public float damage;
+    public string taggName;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,16 @@ public class Damage : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == taggName)
+        {
+            TakeDamage();
+        }
+    }
+    public void TakeDamage()
+    {
+        HealthScript.currentHealth -= damage;
     }
 }
