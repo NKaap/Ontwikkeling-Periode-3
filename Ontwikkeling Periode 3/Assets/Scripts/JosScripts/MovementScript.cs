@@ -21,7 +21,7 @@ public class MovementScript : MonoBehaviour
 
     void Start()
     {
-        ammo = 20;
+        ammo = 80;
     }
 
     // Update is called once per frame
