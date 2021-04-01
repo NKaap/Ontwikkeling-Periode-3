@@ -1,10 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class PlayerMovement : MonoBehaviour
+public class SimpleMovement : MonoBehaviour
 {
     //Movement
     public float movementSpeed = 10.0f;
@@ -19,20 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isGrounded;
     Rigidbody rb;
-
-    //portal
-    public GameObject gate3;
-    public string portal3;
-    public bool activePortal;
-    public GameObject trigger3;
-
-    //KillCOunt
-    public int killCount;
-    public Text text;
-    public RaycastHit hit;
-    public string taggName;
-    public GameObject canvasGo;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -76,44 +60,5 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
-
-        //Killcount
-        text.text = killCount.ToString();
-
-        if(killCount >= 199)
-        {
-            gate3.SetActive(true);
-            canvasGo.SetActive(true);
-        }
-        if (Input.GetKeyDown("b"))
-        {
-            killCount = 200;
-        }
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 1000))
-        {
-            if (Input.GetButton("Fire1"))
-            {
-                if(hit.transform.tag == "Enemy")
-                {
-                    killCount += 1;
-                }
-            }
-        }
-        
     }
-    void OnCollisionStay()
-    {
-        isGrounded = true;
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.collider.tag == "Portal3")
-        {
-            if (trigger3.activeInHierarchy == true)
-            {
-                SceneManager.LoadScene("Lobby");
-            }
-        }
-    }
-
 }

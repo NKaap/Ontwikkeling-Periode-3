@@ -1538,9 +1538,9 @@ GameObject:
   - component: {fileID: 856749214}
   - component: {fileID: 856749213}
   - component: {fileID: 856749212}
-  - component: {fileID: 856749211}
   - component: {fileID: 856749216}
   - component: {fileID: 856749217}
+  - component: {fileID: 856749211}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1557,11 +1557,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 856749210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adfdda8332648b544984adcf03b774d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 849fb55aa8c36244f81ea33684d36879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  rotateSpeed: 80
+  rotateSpeed: 200
   cam: {fileID: 1740186846}
   jump: {x: 0, y: 0, z: 0}
   jumpForce: 2
