@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class portals : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class portals : MonoBehaviour
             canvasEnd.SetActive(true);
             canvasGame.SetActive(false);
             Cursor.visible = true;
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

@@ -8,9 +8,6 @@ public class Shooting : MonoBehaviour
     public float fireRate = 15f;
     public float impactForce = 30f;
 
-
-    private float nextTimeToFire = 0f;
-
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     // Update is called once per frame

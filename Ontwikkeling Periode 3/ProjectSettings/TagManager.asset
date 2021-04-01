@@ -11,6 +11,11 @@ TagManager:
   - Portal3
   - Enemy
   - Arrow
+  - Water
+  - Key
+  - Gate
+  - Portal
+  - portal
   layers:
   - Default
   - TransparentFX
