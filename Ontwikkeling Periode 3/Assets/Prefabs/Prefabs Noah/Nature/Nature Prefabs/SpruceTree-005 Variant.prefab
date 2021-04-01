@@ -84,7 +84,17 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0915423312cb5154588cd4d3b5f45d04,
         type: 3}
       propertyPath: m_Name
-      value: SpruceTree-005
+      value: SpruceTree-005 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0915423312cb5154588cd4d3b5f45d04,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0915423312cb5154588cd4d3b5f45d04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0915423312cb5154588cd4d3b5f45d04, type: 3}

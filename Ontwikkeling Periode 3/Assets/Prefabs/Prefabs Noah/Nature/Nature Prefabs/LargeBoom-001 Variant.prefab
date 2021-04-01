@@ -84,7 +84,17 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ffb3b6f5e63045646b9a93ac716c9621,
         type: 3}
       propertyPath: m_Name
-      value: LargeBoom-001
+      value: LargeBoom-001 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffb3b6f5e63045646b9a93ac716c9621,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffb3b6f5e63045646b9a93ac716c9621,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb3b6f5e63045646b9a93ac716c9621, type: 3}
