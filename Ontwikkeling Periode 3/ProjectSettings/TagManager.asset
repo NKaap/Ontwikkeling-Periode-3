@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - WorldBorder
+  - Enemy
   layers:
   - Default
   - TransparentFX
