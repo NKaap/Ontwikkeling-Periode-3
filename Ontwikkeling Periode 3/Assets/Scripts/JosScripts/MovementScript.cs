@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MovementScript : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class MovementScript : MonoBehaviour
     public GameObject arrowPrefab;
     public GameObject cam;
     public int ammo;
+<<<<<<< HEAD
+=======
+    public Text ammoText;
+    public int health = 100;
+    public Text healText;
+>>>>>>> 0c211ff0fff0aa78c29c315bdacf46851bba5c8c
 
     void Start()
     {
@@ -35,6 +42,11 @@ public class MovementScript : MonoBehaviour
             if (ammo > 0)
             {
                 ammo--;
+<<<<<<< HEAD
+=======
+                ammoText.text = "Ammo: " + ammo;
+                healText.text = "Health: " + health;
+>>>>>>> 0c211ff0fff0aa78c29c315bdacf46851bba5c8c
 
                 GameObject bulletObject = Instantiate(arrowPrefab);
                 bulletObject.transform.position = cam.transform.position + cam.transform.forward;
