@@ -8,7 +8,6 @@ public class keys : MonoBehaviour
     public bool[] gotKeys;
     public Text text;
     public int keyCount;
-    public GameObject portal;
 
 
     private void OnCollisionEnter(Collision collision)
@@ -40,7 +39,7 @@ public class keys : MonoBehaviour
             }
             if (gotAllTheKeys == true)
             {
-                portal.SetActive(true);
+                Destroy(collision.gameObject);
             }
         }
     }
