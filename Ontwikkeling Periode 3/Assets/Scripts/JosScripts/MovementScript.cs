@@ -15,6 +15,7 @@ public class MovementScript : MonoBehaviour
     public Text ammoText;
     public int health = 100;
     public Text healText;
+    public int enemydamage = 20;
 
     void Start()
     {
@@ -47,8 +48,19 @@ public class MovementScript : MonoBehaviour
                 bulletObject.transform.forward = cam.transform.forward;
             }
         }
-       
+    }
 
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            health -= enemydamage;
+            healText.text = "Health: " + health;
+            if (health <= 0)
+            {
+                gameObject.SetActive(false);
+            }
+        }
     }
 
 
