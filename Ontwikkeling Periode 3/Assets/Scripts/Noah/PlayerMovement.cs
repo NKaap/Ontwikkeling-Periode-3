@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isGrounded;
     Rigidbody rb;
+
+    //portal
+    public GameObject gate3;
+    public string portal3;
+    public bool activePortal;
+    public GameObject trigger3;
 
     // Start is called before the first frame update
     void Start()
@@ -65,5 +72,12 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionStay()
     {
         isGrounded = true;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(trigger3.activeInHierarchy == true)
+        {
+            SceneManager.LoadScene("Lobby");
+        }
     }
 }
