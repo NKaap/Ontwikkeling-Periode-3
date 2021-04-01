@@ -11,6 +11,12 @@ public class BorderScript : MonoBehaviour
     public GameObject enemy2;
     public GameObject enemy3;
     public GameObject enemy4;
+    public GameObject enemy5;
+    public GameObject enemy6;
+    public GameObject enemy7;
+    public GameObject enemy8;
+    public GameObject enemy9;
+
     // Update is called once per frame
     void Update()
     {
