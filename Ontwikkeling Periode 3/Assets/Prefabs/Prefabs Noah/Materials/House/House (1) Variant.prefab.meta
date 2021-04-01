@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Ontwikkeling Periode 3/Assets/PrefabsJos/LowPolyTree.prefab.meta
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream:Ontwikkeling Periode 3/Assets/PrefabsJos/LowPolyTree.prefab.meta
@@ -22,6 +23,14 @@ guid: c57fa715ffb0edb42a5a9f6a574bea53
 PrefabImporter:
 >>>>>>> 7a91b8a9d782807885bff594c4aa7c1c38038ab0:Ontwikkeling Periode 3/Assets/PrefabsJos/LowPolyTree.prefab.meta
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD:Ontwikkeling Periode 3/Assets/Prefabs/Prefabs Noah/Nature/BrokenTree-002.prefab.meta
+guid: 8b340b33a44771540997a78605f99d0d
+=======
+guid: c57fa715ffb0edb42a5a9f6a574bea53
+>>>>>>> 0c211ff0fff0aa78c29c315bdacf46851bba5c8c:Ontwikkeling Periode 3/Assets/Prefabs/Prefabs Noah/Materials/House/House (1) Variant.prefab.meta
+PrefabImporter:
+>>>>>>> 0c211ff0fff0aa78c29c315bdacf46851bba5c8c
   externalObjects: {}
   userData: 
   assetBundleName: 
