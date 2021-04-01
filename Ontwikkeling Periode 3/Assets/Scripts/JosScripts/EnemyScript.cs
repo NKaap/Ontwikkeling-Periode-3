@@ -7,7 +7,8 @@ public class EnemyScript : MonoBehaviour
 {
     public GameObject player;
     public NavMeshAgent raptor;
-    public int enemyHealth;
+    public int enemyHealth = 3;
+ 
 
     // Update is called once per frame
     void Update()
@@ -15,5 +16,13 @@ public class EnemyScript : MonoBehaviour
         raptor.SetDestination(player.transform.position);
         transform.LookAt(player.transform);
     }
-   
-}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Arrow")
+        {
+            enemyHealth--;
+        }
+    }
+
+  }
