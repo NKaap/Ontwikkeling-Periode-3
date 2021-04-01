@@ -7,7 +7,7 @@ public class CollisionScript : MonoBehaviour
     public GameObject player;
     private void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Enemy")
+        if (col.gameObject.tag == "Player")
         {
             
         }

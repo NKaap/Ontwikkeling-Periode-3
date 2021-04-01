@@ -14,8 +14,6 @@ TagManager:
   - Water
   - Key
   - Gate
-  - Portal
-  - portal
   layers:
   - Default
   - TransparentFX
