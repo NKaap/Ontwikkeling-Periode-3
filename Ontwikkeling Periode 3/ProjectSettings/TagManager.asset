@@ -10,6 +10,7 @@ TagManager:
   - Portal2
   - Portal3
   - Enemy
+  - Arrow
   layers:
   - Default
   - TransparentFX

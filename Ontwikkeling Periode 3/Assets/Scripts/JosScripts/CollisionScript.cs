@@ -9,7 +9,7 @@ public class CollisionScript : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
-            player.gameObject.SetActive(false);
+            
         }
     }
 }
